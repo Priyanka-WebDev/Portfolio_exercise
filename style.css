@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 2px solid #dadada;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    gap: 4vw;
+}
+.nav h2 img{
+    /* font-size: 2.5vw;
+    font-weight: 700; */
+    height: 100px;
+    width: 100px;
+}
+.nav h4{
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+.nav i{
+    font-size: 2vw;
+    font-weight: 800;
+    display: none;
+}
+.content{
+    /* height: 80%; */
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: wheat; */
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+.left h1 span{
+    color: #FF735C;
+    color:#3492eb;
+}
+.left p{
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+.nav button{
+    font-size: 1.2vw;
+    padding: 0.9vw 2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #385A64;
+
+}
+button{
+    font-size: 1.2vw;
+    padding: 1.3vw 2.3vw;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color:#3492eb;
+
+}
+.right{
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:600px){
+    .nav{
+        /* background-color: lightgreen; */
+        /* color: white; */
+        padding: 0 6vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h2 img{
+        height: 60px;
+        background-color:none;
+    }
+    .nav h4{
+        font-size: 6vw;
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 6vw;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        /* background-color: red; */
+        width: 100%;
+        height: 60%;
+        padding: 4vw 6vw;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    .left h1{
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    .left p{
+        font-size: 4vw;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 6%;
+    }
+    .content button{
+        padding: 3vw 6vw;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 3.5vw;
+    }
+}
